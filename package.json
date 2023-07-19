@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "main": "lib/index.ts",
   "module": "es/index.ts",
-  "types": "types/index.d.ts",
   "type": "module",
   "files": [
     "lib/",
@@ -11,18 +10,22 @@
     "src/",
     "README.md"
   ],
-  "dependencies": {
+  "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/plugin-transform-runtime": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
-    "@babel/preset-typescript": "^7.22.5",
-    "@babel/runtime": "^7.22.6",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^25.0.3",
     "@rollup/plugin-image": "^3.0.2",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-typescript": "^11.1.2",
+    "rollup": "^3.0.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.22.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -30,16 +33,13 @@
     "@types/node": "^16.18.38",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "antd": "^5.7.1",
     "cross-env": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "rollup": "^3.26.3",
-    "rollup-plugin-delete": "^2.0.0",
-    "rollup-plugin-dts": "^5.3.0",
     "rollup-plugin-includepaths": "^0.2.4",
     "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-externals": "^6.1.1",
     "rollup-plugin-replace": "^2.2.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
